@@ -19,7 +19,7 @@ body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   min-height: 100vh;
   background-color: aliceblue;
@@ -38,6 +38,18 @@ a {
   color: var(--clr-white);
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .title {
@@ -89,10 +101,69 @@ a {
   text-align: center;
 }
 
+/* is-triangle */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form.is-triangle {
+  min-width: 36rem;
+  min-height: 30rem;
+  background-color: #1c2042;
+  color: var(--clr-white);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-check {
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background-color: chocolate;
+  color: var(--clr-white);
+  font-weight: 800;
+}
+
+.result {
+  display: none;
+}
+
+/* Media */
+
 @media (max-width: 991px) {
+  html {
+    font-size: 11px;
+  }
   .title {
     margin-top: 1rem;
-    font-size: 1.5rem;
   }
 
   .card-container {
@@ -102,21 +173,8 @@ a {
   }
 
   .card-description {
-    font-size: 0.9rem;
     line-height: 1.6;
     padding: 0;
     margin-bottom: 0.5rem;
   }
-}
-
-/* is-triangle */
-
-form.is-triangle {
-  width: 90%;
-  min-height: 40rem;
-  margin: auto;
-  background-color: #1c2042;
-  color: var(--clr-white);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
 }

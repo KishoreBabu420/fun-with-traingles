@@ -10,9 +10,46 @@
   </head>
   <body>
     <h1 class="title">Is Triangle?</h1>
-    <div class="card-container">
-      <form class="is-triangle" id="is-triangle"></form>
+    <h2 class="result" id="result"></h2>
+    <div class="container">
+      <form class="is-triangle" id="is-triangle">
+        <div class="form-control">
+          <label for="angle#1">Enter Angle 1 in deg<sup>o</sup></label>
+          <input
+            type="number"
+            name="angle#1"
+            id="angle#1"
+            class="input-angle"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="angle#2">Enter Angle 2 in deg<sup>o</sup></label>
+          <input
+            type="number"
+            name="angle#2"
+            id="angle#2"
+            class="input-angle"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="angle#3">Enter Angle 3 in deg<sup>o</sup></label>
+          <input
+            type="number"
+            name="angle#3"
+            id="angle#3"
+            class="input-angle"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <button class="btn btn-check" id="btn-check" type="submit">
+            Check
+          </button>
+        </div>
+      </form>
     </div>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/is-triangle.js"></script>
   </body>
 </html>
