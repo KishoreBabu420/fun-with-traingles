@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun With Triangles</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Calculate hypotenuse</h1>
+    <h2 class="result" id="result"></h2>
+    <div class="container">
+      <form class="is-triangle" id="is-triangle">
+        <div class="form-control">
+          <label for="side#1">Enter side 1 in cm</label>
+          <input
+            type="number"
+            name="side#1"
+            id="side#1"
+            class="input-side"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="side#2">Enter side 2 in cm</label>
+          <input
+            type="number"
+            name="side#2"
+            id="side#2"
+            class="input-side"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <button class="btn btn-calculate" id="btn-calculate" type="submit">
+            Calculate
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./scripts/find-hypotenuse.js"></script>
+  </body>
+</html>
