@@ -52,6 +52,16 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.row.space-between {
+  justify-content: space-between;
+}
+
 .title {
   font-size: 2.5rem;
   text-align: center;
@@ -109,7 +119,7 @@ input[type='number'] {
   align-items: center;
 }
 
-form.is-triangle {
+form {
   min-width: 30rem;
   min-height: 20rem;
   background-color: #1c2042;
@@ -142,7 +152,8 @@ input {
 }
 
 .btn-check,
-.btn-calculate {
+.btn-calculate,
+.btn-submit {
   outline: none;
   border: none;
   margin-top: 1rem;
@@ -155,6 +166,28 @@ input {
 
 .result {
   display: none;
+}
+
+/* Quiz */
+
+.quiz-control {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--clr-white);
+}
+.radio-quiz {
+  margin: 0.5rem 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-right: 0.4rem;
 }
 
 /* Media */

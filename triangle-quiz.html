@@ -12,52 +12,92 @@
     <h1 class="title">Calculate hypotenuse</h1>
     <h2 class="result" id="result"></h2>
     <div class="container">
-      <form class="is-triangle" id="is-triangle">
-        <div class="form-control">
+      <form class="quiz-form" id="quiz-form">
+        <div class="form-control quiz-control">
           <p>
-            What is the third angle for the triangle where angle1 = 45° and
-            angle2 = 45°?
+            What is the third angle for the triangle where angle#1 = 65° and
+            angle#2 = 35°?
           </p>
-          <label>
-            <input required="" type="radio" name="options" value="45°" />
-            45°
-          </label>
-          <label>
-            <input required="" type="radio" name="options" value="60°" />
-            60°
-          </label>
-          <label>
-            <input required="" type="radio" name="options" value="90°" />
-            90°
-          </label>
+          <div class="row space-between">
+            <label class="radio-quiz">
+              <input required type="radio" name="question1" value="45°" />
+              45°
+            </label>
+            <label class="radio-quiz">
+              <input required type="radio" name="question1" value="80°" />
+              80°
+            </label>
+            <label class="radio-quiz">
+              <input required type="radio" name="question1" value="60°" />
+              60°
+            </label>
+            <label class="radio-quiz">
+              <input required="" type="radio" name="question1" value="90°" />
+              90°
+            </label>
+          </div>
+        </div>
+        <div class="form-control quiz-control">
+          <p>How many vertices does a triangle have?</p>
+          <div class="row space-between">
+            <label class="radio-quiz">
+              <input required type="radio" name="question2" value="1" />
+              1
+            </label>
+            <label class="radio-quiz">
+              <input required type="radio" name="question2" value="2" />
+              2</label
+            >
+            <label class="radio-quiz">
+              <input required type="radio" name="question2" value="3" />
+              3
+            </label>
+            <label class="radio-quiz">
+              <input required="" type="radio" name="question2" value="4" />
+              4
+            </label>
+          </div>
+        </div>
+        <div class="form-control quiz-control">
+          <p>
+            If two sides of a triangle are not equal, the triangle is called.
+          </p>
+          <div class="row space-between">
+            <label class="radio-quiz">
+              <input required type="radio" name="question3" value="scalene" />
+              Scalene
+            </label>
+            <label class="radio-quiz">
+              <input required type="radio" name="question3" value="isosceles" />
+              isosceles
+            </label>
+            <label class="radio-quiz">
+              <input
+                required
+                type="radio"
+                name="question3"
+                value="equilateral"
+              />
+              equilateral
+            </label>
+            <label class="radio-quiz">
+              <input
+                required=""
+                type="radio"
+                name="question3"
+                value=" right-angled"
+              />
+              right-angled
+            </label>
+          </div>
         </div>
         <div class="form-control">
-          <label for="side#1">Enter side 1 in cm</label>
-          <input
-            type="number"
-            name="side#1"
-            id="side#1"
-            class="input-side"
-            required
-          />
-        </div>
-        <div class="form-control">
-          <label for="side#2">Enter side 2 in cm</label>
-          <input
-            type="number"
-            name="side#2"
-            id="side#2"
-            class="input-side"
-            required
-          />
-        </div>
-        <div class="form-control">
-          <button class="btn btn-calculate" id="btn-calculate" type="submit">
-            Calculate
+          <button class="btn btn-submit" id="btn-submit" type="submit">
+            Submit
           </button>
         </div>
       </form>
     </div>
-    <script src="./scripts/find-hypotenuse.js"></script>
+    <script src="./scripts/triangle-quiz.js"></script>
   </body>
 </html>
