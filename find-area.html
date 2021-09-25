@@ -20,7 +20,8 @@
             name="base"
             id="base"
             class="input-side"
-            required
+         min="1" oninput="this.value = 
+ !!this.value && Math.abs(this.value) >= 1 ? Math.abs(this.value) : null"
           />
         </div>
         <div class="form-control">
@@ -30,7 +31,8 @@
             name="height"
             id="height"
             class="input-side"
-            required
+            min="1" oninput="this.value = 
+ !!this.value && Math.abs(this.value) >= 1 ? Math.abs(this.value) : null"
           />
         </div>
         <div class="form-control">
