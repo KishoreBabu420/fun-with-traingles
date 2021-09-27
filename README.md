@@ -1,2 +1,4 @@
 # fun-with-traingles
- A JavaScript fun project to make fun with Trainagles
+ A JavaScript fun project to to learn more about the world of triangles.
+ 
+ live URL: https://fun-with-tri.netlify.app/
